@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/vhops/deneme #Add /<sub_folder> if required
+    - /bin/cp -r * $DEPLOYPATH
