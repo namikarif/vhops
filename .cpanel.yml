@@ -1,7 +1,7 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/vhops/public_html
-    - export REPOPATH=/home/vhops/repositories/PROJECT
+    - export DEPLOYPATH=/home/vhops/deneme
+    - export REPOPATH=/home/vhops/deneme
     - /bin/rm -Rf ${DEPLOYPATH}_old
     - /bin/cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
     - /bin/rsync -aP --exclude '.git' --exclude '.well-known' ${REPOPATH}/ ${DEPLOYPATH} --delete-after
